@@ -30,7 +30,7 @@ class CommentMerchantRelationRequestConnectorToCommentFacadeBridge implements Co
     /**
      * @param \Generated\Shared\Transfer\CommentsRequestTransfer $commentsRequestTransfer
      *
-     * @return list<\Generated\Shared\Transfer\CommentThreadTransfer>
+     * @return array<\Generated\Shared\Transfer\CommentThreadTransfer>
      */
     public function getCommentThreads(CommentsRequestTransfer $commentsRequestTransfer): array
     {

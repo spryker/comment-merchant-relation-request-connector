@@ -106,7 +106,7 @@ class CommentThreadCopier implements CommentThreadCopierInterface
     /**
      * @param \Generated\Shared\Transfer\MerchantRelationshipCollectionTransfer $merchantRelationshipCollectionTransfer
      *
-     * @return list<string>
+     * @return array<string>
      */
     protected function extractMerchantRelationRequestUuids(
         MerchantRelationshipCollectionTransfer $merchantRelationshipCollectionTransfer

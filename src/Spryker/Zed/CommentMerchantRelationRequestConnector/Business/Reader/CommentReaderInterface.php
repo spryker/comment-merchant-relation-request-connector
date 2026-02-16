@@ -11,7 +11,7 @@ interface CommentReaderInterface
 {
     /**
      * @param string $ownerType
-     * @param list<int> $ownerIds
+     * @param array<int> $ownerIds
      *
      * @return array<int, \Generated\Shared\Transfer\CommentThreadTransfer>
      */

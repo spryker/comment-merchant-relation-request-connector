@@ -10,7 +10,7 @@ namespace Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Reader;
 interface MerchantRelationRequestReaderInterface
 {
     /**
-     * @param list<string> $merchantRelationRequestUuids
+     * @param array<string> $merchantRelationRequestUuids
      *
      * @return array<string, \Generated\Shared\Transfer\MerchantRelationRequestTransfer>
      */

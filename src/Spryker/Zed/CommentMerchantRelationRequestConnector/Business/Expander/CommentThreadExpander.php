@@ -54,7 +54,7 @@ class CommentThreadExpander implements CommentThreadExpanderInterface
     /**
      * @param \Generated\Shared\Transfer\MerchantRelationRequestCollectionTransfer $merchantRelationRequestCollectionTransfer
      *
-     * @return list<int>
+     * @return array<int>
      */
     protected function extractMerchantRelationRequestIds(
         MerchantRelationRequestCollectionTransfer $merchantRelationRequestCollectionTransfer
