@@ -18,19 +18,11 @@ class CommentThreadExpander implements CommentThreadExpanderInterface
      */
     protected CommentReaderInterface $commentReader;
 
-    /**
-     * @param \Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Reader\CommentReaderInterface $commentReader
-     */
     public function __construct(CommentReaderInterface $commentReader)
     {
         $this->commentReader = $commentReader;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationRequestCollectionTransfer $merchantRelationRequestCollectionTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantRelationRequestCollectionTransfer
-     */
     public function expandMerchantRelationRequestCollection(
         MerchantRelationRequestCollectionTransfer $merchantRelationRequestCollectionTransfer
     ): MerchantRelationRequestCollectionTransfer {

@@ -21,12 +21,6 @@ interface CommentMerchantRelationRequestConnectorToCommentFacadeInterface
      */
     public function getCommentThreads(CommentsRequestTransfer $commentsRequestTransfer): array;
 
-    /**
-     * @param \Generated\Shared\Transfer\CommentFilterTransfer $commentFilterTransfer
-     * @param \Generated\Shared\Transfer\CommentRequestTransfer $commentRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\CommentThreadResponseTransfer
-     */
     public function duplicateCommentThread(
         CommentFilterTransfer $commentFilterTransfer,
         CommentRequestTransfer $commentRequestTransfer

@@ -35,10 +35,6 @@ class CommentThreadCopier implements CommentThreadCopierInterface
      */
     protected MerchantRelationRequestReaderInterface $merchantRelationRequestReader;
 
-    /**
-     * @param \Spryker\Zed\CommentMerchantRelationRequestConnector\Dependency\Facade\CommentMerchantRelationRequestConnectorToCommentFacadeInterface $commentFacade
-     * @param \Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Reader\MerchantRelationRequestReaderInterface $merchantRelationRequestReader
-     */
     public function __construct(
         CommentMerchantRelationRequestConnectorToCommentFacadeInterface $commentFacade,
         MerchantRelationRequestReaderInterface $merchantRelationRequestReader
@@ -47,11 +43,6 @@ class CommentThreadCopier implements CommentThreadCopierInterface
         $this->merchantRelationRequestReader = $merchantRelationRequestReader;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipCollectionTransfer $merchantRelationshipCollectionTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantRelationshipCollectionTransfer
-     */
     public function copyCommentThreadsFromMerchantRelationRequests(
         MerchantRelationshipCollectionTransfer $merchantRelationshipCollectionTransfer
     ): MerchantRelationshipCollectionTransfer {
@@ -79,12 +70,6 @@ class CommentThreadCopier implements CommentThreadCopierInterface
         return $merchantRelationshipCollectionTransfer;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     * @param \Generated\Shared\Transfer\MerchantRelationRequestTransfer $merchantRelationRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\CommentThreadTransfer|null
-     */
     protected function copyCommentThread(
         MerchantRelationshipTransfer $merchantRelationshipTransfer,
         MerchantRelationRequestTransfer $merchantRelationRequestTransfer

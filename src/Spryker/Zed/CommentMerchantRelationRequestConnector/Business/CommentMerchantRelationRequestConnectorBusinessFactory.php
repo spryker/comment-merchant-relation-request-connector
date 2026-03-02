@@ -25,9 +25,6 @@ use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
  */
 class CommentMerchantRelationRequestConnectorBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Expander\CommentThreadExpanderInterface
-     */
     public function createCommentThreadExpander(): CommentThreadExpanderInterface
     {
         return new CommentThreadExpander(
@@ -35,9 +32,6 @@ class CommentMerchantRelationRequestConnectorBusinessFactory extends AbstractBus
         );
     }
 
-    /**
-     * @return \Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Copier\CommentThreadCopierInterface
-     */
     public function createCommentThreadCopier(): CommentThreadCopierInterface
     {
         return new CommentThreadCopier(
@@ -46,9 +40,6 @@ class CommentMerchantRelationRequestConnectorBusinessFactory extends AbstractBus
         );
     }
 
-    /**
-     * @return \Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Reader\CommentReaderInterface
-     */
     public function createCommentReader(): CommentReaderInterface
     {
         return new CommentReader(
@@ -56,9 +47,6 @@ class CommentMerchantRelationRequestConnectorBusinessFactory extends AbstractBus
         );
     }
 
-    /**
-     * @return \Spryker\Zed\CommentMerchantRelationRequestConnector\Business\Reader\MerchantRelationRequestReaderInterface
-     */
     public function createMerchantRelationRequestReader(): MerchantRelationRequestReaderInterface
     {
         return new MerchantRelationRequestReader(
@@ -66,17 +54,11 @@ class CommentMerchantRelationRequestConnectorBusinessFactory extends AbstractBus
         );
     }
 
-    /**
-     * @return \Spryker\Zed\CommentMerchantRelationRequestConnector\Dependency\Facade\CommentMerchantRelationRequestConnectorToCommentFacadeInterface
-     */
     public function getCommentFacade(): CommentMerchantRelationRequestConnectorToCommentFacadeInterface
     {
         return $this->getProvidedDependency(CommentMerchantRelationRequestConnectorDependencyProvider::FACADE_COMMENT);
     }
 
-    /**
-     * @return \Spryker\Zed\CommentMerchantRelationRequestConnector\Dependency\Facade\CommentMerchantRelationRequestConnectorToMerchantRelationRequestFacadeInterface
-     */
     public function getMerchantRelationRequestFacade(): CommentMerchantRelationRequestConnectorToMerchantRelationRequestFacadeInterface
     {
         return $this->getProvidedDependency(CommentMerchantRelationRequestConnectorDependencyProvider::FACADE_MERCHANT_RELATION_REQUEST);

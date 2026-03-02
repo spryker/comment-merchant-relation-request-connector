@@ -17,9 +17,6 @@ class CommentReader implements CommentReaderInterface
      */
     protected CommentMerchantRelationRequestConnectorToCommentFacadeInterface $commentFacade;
 
-    /**
-     * @param \Spryker\Zed\CommentMerchantRelationRequestConnector\Dependency\Facade\CommentMerchantRelationRequestConnectorToCommentFacadeInterface $commentFacade
-     */
     public function __construct(
         CommentMerchantRelationRequestConnectorToCommentFacadeInterface $commentFacade
     ) {

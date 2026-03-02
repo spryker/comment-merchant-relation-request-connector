@@ -47,9 +47,6 @@ class CommentMerchantRelationRequestConnectorBusinessTester extends Actor
      */
     protected const COMMENT_THREAD_MERCHANT_RELATION_REQUEST_OWNER_TYPE = 'merchant_relation_request';
 
-    /**
-     * @return \Generated\Shared\Transfer\MerchantRelationRequestTransfer
-     */
     public function createMerchantRelationRequest(): MerchantRelationRequestTransfer
     {
         $merchantTransfer = $this->haveMerchant();
@@ -82,11 +79,6 @@ class CommentMerchantRelationRequestConnectorBusinessTester extends Actor
             ->setOwnerCompanyBusinessUnit($ownerCompanyBusinessUnit);
     }
 
-    /**
-     * @param string|null $merchantRelationRequestUuid
-     *
-     * @return \Generated\Shared\Transfer\MerchantRelationshipTransfer
-     */
     public function createMerchantRelationship(?string $merchantRelationRequestUuid = null): MerchantRelationshipTransfer
     {
         $merchantTransfer = $this->haveMerchant();
@@ -104,11 +96,6 @@ class CommentMerchantRelationRequestConnectorBusinessTester extends Actor
         ]);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationRequestTransfer $merchantRelationRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\CommentThreadTransfer
-     */
     public function addCustomerCommentToMerchantRelationRequest(
         MerchantRelationRequestTransfer $merchantRelationRequestTransfer
     ): CommentThreadTransfer {
@@ -123,11 +110,6 @@ class CommentMerchantRelationRequestConnectorBusinessTester extends Actor
         ])->getCommentThread();
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationRequestTransfer $merchantRelationRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\CommentThreadTransfer
-     */
     public function addUserCommentToMerchantRelationRequest(
         MerchantRelationRequestTransfer $merchantRelationRequestTransfer
     ): CommentThreadTransfer {

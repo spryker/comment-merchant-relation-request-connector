@@ -37,12 +37,6 @@ class CommentMerchantRelationRequestConnectorToCommentFacadeBridge implements Co
         return $this->commentFacade->getCommentThreads($commentsRequestTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\CommentFilterTransfer $commentFilterTransfer
-     * @param \Generated\Shared\Transfer\CommentRequestTransfer $commentRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\CommentThreadResponseTransfer
-     */
     public function duplicateCommentThread(
         CommentFilterTransfer $commentFilterTransfer,
         CommentRequestTransfer $commentRequestTransfer

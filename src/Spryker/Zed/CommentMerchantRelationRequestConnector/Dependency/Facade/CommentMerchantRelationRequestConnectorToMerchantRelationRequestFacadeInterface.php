@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\MerchantRelationRequestCriteriaTransfer;
 
 interface CommentMerchantRelationRequestConnectorToMerchantRelationRequestFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationRequestCriteriaTransfer $merchantRelationRequestCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantRelationRequestCollectionTransfer
-     */
     public function getMerchantRelationRequestCollection(
         MerchantRelationRequestCriteriaTransfer $merchantRelationRequestCriteriaTransfer
     ): MerchantRelationRequestCollectionTransfer;

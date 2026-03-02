@@ -27,11 +27,6 @@ class CommentMerchantRelationRequestConnectorDependencyProvider extends Abstract
      */
     public const FACADE_MERCHANT_RELATION_REQUEST = 'FACADE_MERCHANT_RELATION_REQUEST';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideBusinessLayerDependencies(Container $container): Container
     {
         $container = parent::provideBusinessLayerDependencies($container);
@@ -41,11 +36,6 @@ class CommentMerchantRelationRequestConnectorDependencyProvider extends Abstract
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addCommentFacade(Container $container): Container
     {
         $container->set(static::FACADE_COMMENT, function (Container $container) {
@@ -57,11 +47,6 @@ class CommentMerchantRelationRequestConnectorDependencyProvider extends Abstract
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addMerchantRelationRequestFacade(Container $container): Container
     {
         $container->set(static::FACADE_MERCHANT_RELATION_REQUEST, function (Container $container) {

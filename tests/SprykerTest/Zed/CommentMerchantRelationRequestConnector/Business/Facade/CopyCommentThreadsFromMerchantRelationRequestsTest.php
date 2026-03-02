@@ -46,9 +46,6 @@ class CopyCommentThreadsFromMerchantRelationRequestsTest extends Unit
      */
     protected CommentMerchantRelationRequestConnectorBusinessTester $tester;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
@@ -62,9 +59,6 @@ class CopyCommentThreadsFromMerchantRelationRequestsTest extends Unit
         ]);
     }
 
-    /**
-     * @return void
-     */
     public function testShouldCopyCommentThreadFromRequestToRelationship(): void
     {
         // Arrange
@@ -99,9 +93,6 @@ class CopyCommentThreadsFromMerchantRelationRequestsTest extends Unit
         $this->assertSame(static::COMMENT_THREAD_MERCHANT_RELATIONSHIP_OWNER_TYPE, $copiedCommentThread->getOwnerType());
     }
 
-    /**
-     * @return void
-     */
     public function testShouldNotCopyCommentThreadWhenRequestUuidWasAbsent(): void
     {
         // Arrange
@@ -120,9 +111,6 @@ class CopyCommentThreadsFromMerchantRelationRequestsTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testShouldNotCopyCommentThreadWhenRequestWithoutCommentThread(): void
     {
         // Arrange
@@ -145,9 +133,6 @@ class CopyCommentThreadsFromMerchantRelationRequestsTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testShouldNotCopyCommentThreadWhenRequestWasNotFoundInPersistence(): void
     {
         // Arrange
@@ -166,9 +151,6 @@ class CopyCommentThreadsFromMerchantRelationRequestsTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testThrowNullValueExceptionWhenIdMerchantRelationshipNotProvided(): void
     {
         // Arrange

@@ -18,9 +18,6 @@ class MerchantRelationRequestReader implements MerchantRelationRequestReaderInte
      */
     protected CommentMerchantRelationRequestConnectorToMerchantRelationRequestFacadeInterface $merchantRelationRequestFacade;
 
-    /**
-     * @param \Spryker\Zed\CommentMerchantRelationRequestConnector\Dependency\Facade\CommentMerchantRelationRequestConnectorToMerchantRelationRequestFacadeInterface $merchantRelationRequestFacade
-     */
     public function __construct(
         CommentMerchantRelationRequestConnectorToMerchantRelationRequestFacadeInterface $merchantRelationRequestFacade
     ) {
